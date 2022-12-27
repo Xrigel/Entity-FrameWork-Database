@@ -1,0 +1,20 @@
+<button type="button" class="btn btn-primary float-end m-2" (click)="modalAdd()">
+  Add Hero
+</button>
+
+<table class="table table-striped">
+  <thead>
+  <th>Name</th>
+  <th>FirstName</th>
+  <th>LastName</th>
+  <th>Place</th>
+  </thead>
+  <tbody>
+  <tr *ngFor="let hero of HeroList$|async">
+    <td>{{hero.name}}</td>
+    <td>{{hero.firstName}}</td>
+    <td>{{hero.lastName}}</td>
+    <td>{{hero.place}}</td>
+  </tr>
+  </tbody>
+</table>
